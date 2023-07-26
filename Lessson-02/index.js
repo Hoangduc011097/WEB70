@@ -58,7 +58,10 @@ app.get('/api/v1/todo-list', (req, res) => {
                         const getNewItem = {
                             ...item
                         };
-                        delete getNewItem[key];
+                        for (const keyOfQuerry in querryParams) {
+                            delete getNewItem[keyOfQuerry];
+
+                        }
                         mappingTodo = {
                             ...getNewItem
                         }
