@@ -12,6 +12,7 @@ const express =  require("express");
 const a =4 ;
 const b = 5;
 const result = sum(a,b);
+console.log(result)
 
 // console.log(`Sum between ${a} +  ${b} = ${result}`);
 
